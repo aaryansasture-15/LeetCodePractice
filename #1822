@@ -1,0 +1,14 @@
+// 1822. Sign of the Product of an Array
+class Solution {
+    public int arraySign(int[] nums) {
+        int negaitvecount = 0 ; 
+
+        for(int i : nums){
+            if(i == 0 ){return 0 ; }
+            if(i<0){
+                negaitvecount ++;
+            }
+        }
+        return negaitvecount %2 == 0 ? 1 : -1 ; 
+    }
+}
